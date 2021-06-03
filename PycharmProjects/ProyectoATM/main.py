@@ -25,23 +25,23 @@ for contador in menu_principal:
         else:
             print("Escribio una clave incorrecta")
     elif contador == 2:
-        print("Aqui puedes ingresar un cliente")
+        print("Aqui puedes ingresar un cliente(Aun no esta disponible")
         contador += 1
     for valor in opciones:
         valor = int(input("Elija cual opcion desea efectuar"))
         if valor == 1:
             print("A escogido Retirar dinero")
             retirar = int(input("Dijite el monto que desea retirar"))
-            resta = dinero - retirar
-            dinero = (f"El retiro fue exitoso el monto actual es de {resta} y el retiro fue de {retirar}")
-            print(dinero)
+            dinero = dinero - retirar
+            resp = (f"El retiro fue exitoso el monto actual es de {dinero} y el retiro fue de {retirar}")
+            print(resp)
 
         elif valor == 2:
             print("A escogido Depositar dinero")
             depositar = int(input("Dijte el monto que desea depositar"))
-            suma = depositar + dinero
-            dinero = (f"El deposito fue exitoso, el monto actual es {suma} el deposito fue de {depositar}")
-            print(dinero)
+            dinero = depositar + dinero
+            resp = (f"El deposito fue exitoso, el monto actual es {dinero} el deposito fue de {depositar}")
+            print(resp)
 
         elif valor == 3:
             print("A escogido Verificar Monto")
@@ -50,10 +50,10 @@ for contador in menu_principal:
 
         elif valor == 4:
             print("A salido del menu")
-
+            break
         else:
             print("A ingresado un numero que NO esta en la lista")
-    break
+
 
 
 
